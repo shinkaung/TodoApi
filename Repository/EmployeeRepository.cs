@@ -13,12 +13,12 @@ namespace TodoApi.Repositories
         {
             return await RepositoryContext.Employee
                         .Where(s => s.empName.Contains(searchTerm))
-                        .OrderBy(s => s.id).ToListAsync();
+                        .OrderBy(s => s.Id).ToListAsync();
         }
 
         public bool IsExists(long id)
         {
-            return RepositoryContext.Employee.Any(e => e.id == id);
+            return RepositoryContext.Employee.Any(e => e.Id == id);
         }
     }
 

@@ -5,20 +5,20 @@ using Microsoft.EntityFrameworkCore;
 
 namespace TodoApi.Repositories
 {
-    public class HeroRepository : RepositoryBase<Hero>, IHeroRepository
+    public class HeroRepository : RepositoryBase<Heroes>, IHeroRepository
     {
         public HeroRepository(TodoContext repositoryContext) : base(repositoryContext) { }
 
-        public async Task<IEnumerable<Hero>> SearchHero(string searchTerm)
+        public async Task<IEnumerable<Heroes>> SearchHero(string searchTerm)
         {
-            return await RepositoryContext.Hero
+            return await RepositoryContext.Heroess
                         .Where(s => s.Name.Contains(searchTerm))
-                        .OrderBy(s => s.id).ToListAsync();
+                        .OrderBy(s => s.Id).ToListAsync();
         }
 
         public bool IsExists(long id)
         {
-            return RepositoryContext.Hero.Any(e => e.id == id);
+            return RepositoryContext.Heroess.Any(e => e.Id == id);
         }
     }
 

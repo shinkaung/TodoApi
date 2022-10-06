@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/shinkaung/training2022/TodoApi/TodoApi.csproj": {}
+    "/Users/shinkaung/training2022/shinkaungpyaeshan22-api/TodoApi.csproj": {}
   },
   "projects": {
-    "/Users/shinkaung/training2022/TodoApi/TodoApi.csproj": {
+    "/Users/shinkaung/training2022/shinkaungpyaeshan22-api/TodoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/shinkaung/training2022/TodoApi/TodoApi.csproj",
+        "projectUniqueName": "/Users/shinkaung/training2022/shinkaungpyaeshan22-api/TodoApi.csproj",
         "projectName": "TodoApi",
-        "projectPath": "/Users/shinkaung/training2022/TodoApi/TodoApi.csproj",
+        "projectPath": "/Users/shinkaung/training2022/shinkaungpyaeshan22-api/TodoApi.csproj",
         "packagesPath": "/Users/shinkaung/.nuget/packages/",
-        "outputPath": "/Users/shinkaung/training2022/TodoApi/obj/",
+        "outputPath": "/Users/shinkaung/training2022/shinkaungpyaeshan22-api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/shinkaung/.nuget/NuGet/NuGet.Config"
@@ -60,6 +60,10 @@
               "target": "Package",
               "version": "[6.0.8, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2-beta2, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[6.0.2, )"
@@ -71,6 +75,14 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "Telerik.UI.for.AspNet.Core": {
+              "target": "Package",
+              "version": "[2022.2.802, )"
+            },
+            "dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
             }
           },
           "imports": [
